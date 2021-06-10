@@ -14,6 +14,8 @@
     font-family: Helvetica, Arial, sans-serif;
     cursor: url("../images/cursor.svg"), default;
   }
+
+  /*Landing page*/
   #myVideo {
     position: static;
     right: 0;
@@ -69,7 +71,10 @@
     border-radius: 15px;
     text-shadow: none;
   }
- 
+ /*end landing page*/
+
+
+  /* social side bar*/
   .social {
       height: 100%;
       width: 5%;
@@ -98,8 +103,10 @@
 .social nav ul {
     list-style: none;
   }
+/*end social styling*/
 
 
+/*welcoming statement*/
   .hero {
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +137,9 @@
     color: white;
     line-height: 1.2;
   }
+  /* end welcoming statement*/
+
+
 
 
 /* work section styling*/
@@ -137,7 +147,15 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: space-around;
+    padding: 5vw;
+    margin-left: 5vw;
 
+
+}
+
+#work {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), var(--primary-color));
 }
 #work h2 {
     text-align: center;
@@ -148,14 +166,16 @@
 }
 #run-buddy {
     background-image: url("../images/run-buddy.png");
-    height: 30vw;
-    width: 70vw;
     background-size: cover;
     display:flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 5vw;
+    grid-column: 1 / span 3;
+    border-radius: 2vw;
+    height: 35vw;
+    width: 80vw;
 }
 #run-buddy::before {
     content: "";
@@ -163,25 +183,45 @@
     position: absolute;
     margin: 0 0;
 }
+#run-buddy:hover {
+  content: "";
+}
   
 #horiseon {
     background-image: url("../images/horiseon.png");
-    height: 20vw;
-    width: 40vw;
+    margin: 2vw;
     background-size: cover;
+    border-radius: 2vw;
 }
 .gallery {
     background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
     display:flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: flex-end;
+    align-items: center;
+    
     opacity: 1;
-}
-#horiseon h3, p {
-    align-self: flex-end;
+  
+    
 }
 
+
+.grid-item {
+  width: 35vw;
+  height: 20vw;
+  
+}
+
+#project-3 {
+  background-image: url("../images/placeholder.jpg");
+  margin: 2vw;
+  background-size: cover;
+  border-radius: 2vw;
+}
+
+
+
+/*contact styles*/
 .contact {
   background-color: black;
   margin-left: 5vw;
@@ -264,7 +304,7 @@
   color: var(--primary-color);
 }
 
-/* REACH OUT STYLES END */
+/* contact STYLES END */
 
 /* UTILITIES */
 .text-left {
@@ -283,7 +323,17 @@
 .flex-row {
   display: flex;
 }
+ul {
+  list-style: none;
+}
 
+.bold {
+  font-weight: bold;
+}
+
+
+
+/*about section*/
 .flex {
     width: 100%;
     margin-left: 5vw;
@@ -328,7 +378,11 @@
   font-size: 17px;
   width: 40vw;
 }
+/* end about section*/
 
+
+
+/* skills section styling*/
 .skills-ul {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -344,7 +398,9 @@
   margin: 5vw 30vw;
   border-bottom: .25vw solid var(--tertiary-color);
 }
+/*end skills section styling*/
 
+/*footer*/
 footer {
   background: var(--primary-color);
   padding: 40px 35px;
@@ -353,6 +409,5 @@ footer {
   margin-left: 5vw;
 }
 
-ul {
-  list-style: none;
-}
+
+
