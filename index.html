@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Kait Weishaar Portfolio</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+    </head>
+   
+    <body>
+
+        <header>
+            <h1>
+                 <a href="#top">Kait Weishaar</a>
+            </h1>
+            <nav>
+            <!--Unordered List element-->
+              <ul>
+                <!--List Item Element-->
+                <li>
+                    <!--Anchor element-->
+                    <a href="#work">Work</a><br/>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+              </ul>
+            </nav>
+        </header> 
+
+
+        <aside class="social">
+            <ul>
+                <!--List Item Element-->
+                <li>
+                    <!--Anchor element-->
+                    <a href="url">
+                       <img src="./assets/images/linkedin.svg" alt=""/>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="url">
+                        <img src="./assets/images/github.svg" alt=""/>
+                     </a>
+                </li>
+                <li>
+                    <a href="url">
+                        <img src="./assets/images/instagram.svg" alt=""/>
+                     </a>
+                </li>
+
+                <li>
+                    <a href="url">
+                        <img src="./assets/images/behance.svg" alt=""/>
+                     </a>
+                </li>
+            </ul>
+        </aside>
+        
+        
+        <section class="hero">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/images/video.mp4" type="video/mp4">
+              </video>
+            <div class="hero-cta">
+                <h2>Kait <br>
+                    Weishaar.</h1>
+                <p>Hi! I'm a full stack web developer, designer, architect, and structural engineering student. <br>
+                    Scroll to see what I've been up to</p>
+            </div>
+        </section>   
+            
+        <section id="work">
+            <h2>Work</h2>
+               <div class="work">
+                 <div id="run-buddy">
+                     <div class="gallery">
+                      <h3>Run Buddy</h3>
+                      <p>HTML, CSS, Mediaqueries, Flexbox</p>
+                     </div>
+                 </div>
+                 <div id="horiseon">
+                   <div class="gallery">
+                       <h3>Horiseon</h3>
+                       <p>Code refactor: Semantic HTML, CSS best practices</p>
+                   </div>
+                 </div>
+               </div>
+        </section>
+
+
+
+
+
+        <article id="about" class="about flex-row">
+            <img src="./assets/images/crop2.jpg" alt="Kait's headshot" />
+            <div class="bio">
+                <h3 class="name">About Me</h3>
+                <h4 class="role">Kait Weishaar: Web Developer</h4>
+                <p>
+                    Hi, I'm Kait! I've recently started my journey to becoming a full stack web developer, and I'm loving it! I'm also pursuing degrees in architecture and structural engineering. I love to work at the confluence of technology, design, and math.  
+                </p>
+            </div>
+        </article>
+
+
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <article class="skills-ul flex-row">
+            <ul>
+                <li class="bold">Web Development</li>
+                <li>HTML 5 (Semantic)</li>
+                <li>CSS</li>
+                <li>JavaScript </li>
+            </ul>
+            <ul>
+                <li class="bold">Arhitectural</li>
+                <li>Parametric modelling with Rhino Grasshopper (visual scripting)</li>
+                <li>Autocad</li>
+                <li>Lumion</li>
+                <li>Adobe Creative Suite</li>
+                <li>Excel </li>
+            </ul>
+            <ul>
+                <li class="bold">Engineering</li>
+                <li>Mathcad</li>
+                <li>SAP2000</li>
+                <li>Mathematica</li>
+                <li>MatLab</li>
+                <li>Linear and non-linear finite element analysis</li>
+            </ul>
+        </article>
+        </section>
+
+        <section id="contact" class="contact">
+
+            
+                    <h2 class="section-title">
+                        Contact
+                    </h2>
+            
+                <div class="contact-info">
+                  <div>
+                    <h3>Kait Weishaar</h3>
+                    <p><br>Any questions or projects for me?
+                    <br/>
+                    Let me know and I'll be happy to talk to you!
+                    </p>
+                    <address>
+                    <br/>Chicago, IL <br/>
+                    60616 <br/>
+                    <br/>Phone: 608.369.3221<br/>
+                   Email: <a href="mailto:kweishaar@hawk.iit.edu">kweishaar@hawk.iit.edu</a>
+                    </address>
+                  </div>
+                
+                    <div class="contact-form">
+                        <h3>Contact</h3>
+                        <form>
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="Your Name"/>
+    
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" placeholder="Message"></textarea>
+    
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.4752191107414!2d-87.63319450000003!3d41.8395971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c6c0b469723%3A0xd25397f9728b838a!2s3000%20S%20Wells%20St%2C%20Chicago%2C%20IL%2060616!5e0!3m2!1sen!2sus!4v1621876443930!5m2!1sen!2sus" 
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                        </iframe>
+                </div>
+        
+        </section>
+
+
+
+
+
+
+
+        <footer>
+            <h2>Made with ❤️️ by Kait Weishaar</h2>
+            <p>
+                &copy; 2019 Kait Weishaar.
+            </p>
+        </footer>
+
+    </body>
+</html>
