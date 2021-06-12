@@ -165,7 +165,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 #run-buddy {
-    background-image: url("../images/run-buddy.PNG");
+    background-image: url("../images/run-buddy.jpg");
     background-size: cover;
     display:flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
 }
   
 #horiseon {
-    background-image: url("../images/horiseon.PNG");
+    background-image: url("../images/horiseon.jpg");
     margin: 2vw;
     background-size: cover;
     border-radius: 2vw;
