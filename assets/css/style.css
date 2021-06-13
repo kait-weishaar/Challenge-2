@@ -150,10 +150,12 @@
     align-items: space-around;
     padding: 5vw;
     margin-left: 5vw;
-
-
 }
 
+.work a {
+  text-decoration: none;
+  color: var(--tertiary-color)
+}
 #work {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), var(--primary-color));
 }
@@ -164,44 +166,38 @@
     padding: 4vw;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
-#run-buddy {
-    background-image: url("../images/run-buddy.jpg");
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 5vw;
-    grid-column: 1 / span 3;
-    border-radius: 2vw;
-    height: 35vw;
-    width: 80vw;
-}
-#run-buddy::before {
-    content: "";
-    background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    margin: 0 0;
-}
-#run-buddy:hover {
-  content: "";
-}
+
+
   
-#horiseon {
+.horiseon {
     background-image: url("../images/horiseon.jpg");
     margin: 2vw;
     background-size: cover;
     border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  opacity:0.75;
 }
+
+.horiseon:hover {
+  content: "";
+  background-image: url("../images/horiseon.jpg");
+  background-size: cover;
+  opacity: 1;
+  }
+
+
 .gallery {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-  
+    justify-content: flex-end;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
     
 }
 
@@ -212,12 +208,39 @@
   
 }
 
-#project-3 {
+.project-3 {
   background-image: url("../images/placeholder.jpg");
   margin: 2vw;
   background-size: cover;
   border-radius: 2vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+.run-buddy {
+  background-image: url("../images/run-buddy.jpg");
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 5vw;
+  grid-column: 1 / span 3;
+  border-radius: 2vw;
+  height: 35vw;
+  width: 80vw;
+  opacity: 0.75;
+}
+
+.run-buddy:hover {
+content: "";
+background-image: url("../images/run-buddy.jpg");
+background-size: cover;
+opacity: 1;
+}
+
 
 
 
@@ -383,17 +406,21 @@ ul {
 
 
 /* skills section styling*/
-.skills-ul {
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex: 1 80vw;
-}
-
 .skills {
   background-color: var(--primary-color);
   margin-left: 5vw;
   padding: 1vw 0 3vw 0;
+  
 }
+
+.skills-ul {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1 80vw;
+}
+
+
 .skills h2 {
   margin: 5vw 30vw;
   border-bottom: .25vw solid var(--tertiary-color);
@@ -410,4 +437,34 @@ footer {
 }
 
 
+/* MEDIA QUERY FOR phones */
+@media screen and (max-width: 575px) {
+  
 
+  header nav ul li a {
+    font-size: 3vw;
+  }
+
+}
+
+
+/* MEDIA QUERY FOR tablets AND SMALLER */
+@media screen and (max-width: 800px) {
+  .skills-ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 80vw;
+  }
+
+  .horiseon {
+    height: 40vw;
+    width:80vw;
+  }
+
+  .project-3 {
+    height: 40vw;
+    width:80vw;
+  }
+}
