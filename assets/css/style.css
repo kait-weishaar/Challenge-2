@@ -21,7 +21,7 @@
     right: 0;
     top: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     z-index: 1;
   }  
   header {
@@ -117,6 +117,7 @@
   }
 
   .hero-cta {
+    background-color: rgba(0,0,0, 0.25);
     width: 35%;
     text-align: right;
     margin: 3.5%;
@@ -128,6 +129,8 @@
     z-index:7000;
     position: absolute;
     margin-top: 25vw;
+    border-radius: 2vw;
+    padding: 2vw 2vw;
 
   }
   .hero-cta h2 {
@@ -201,6 +204,25 @@
     
 }
 
+.project-1 {
+  background-image: url("../images/group1.jpg");
+  background-position: center;
+  margin: 2vw;
+    background-size: cover;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  opacity:0.75;
+}
+
+.project-1:hover {
+  content: "";
+  background-image: url("../images/group1.jpg");
+  background-size: cover;
+  opacity: 1;
+  }
 
 .grid-item {
   width: 35vw;
@@ -275,6 +297,7 @@ opacity: 1;
 
 .contact-info div {
   color: white;
+  text-align: center;
 }
 
 .contact-info h3 {
@@ -418,6 +441,7 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   flex: 1 80vw;
+  padding: 0 2vw 2vw 2vw;
 }
 
 
@@ -464,6 +488,10 @@ footer {
   }
 
   .project-3 {
+    height: 40vw;
+    width:80vw;
+  }
+  .project-1 {
     height: 40vw;
     width:80vw;
   }
